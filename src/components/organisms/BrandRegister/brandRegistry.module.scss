@@ -1,0 +1,33 @@
+@import "../../../styles/variables.scss";
+
+.brandRegistryView {
+  padding: 3rem 2rem;
+  padding-top: 5.5rem;
+  margin: 2rem;
+  margin-left: 1rem;
+  background-color: $white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+  height: fit-content;
+  position: relative;
+
+  &__infoTitle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px 10px 0 0;
+    background-color: $hover;
+    width: 100%;
+    padding: 1rem;
+
+    h2 {
+      font-weight: 400;
+      align-self: flex-start;
+    }
+  }
+}

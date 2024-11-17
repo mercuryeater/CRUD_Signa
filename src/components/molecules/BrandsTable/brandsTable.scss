@@ -1,0 +1,26 @@
+@import "../../../styles/variables.scss";
+
+.BrandsTable {
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: -2.5rem;
+}
+
+.BrandsTableContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    h3 {
+      font-size: 2rem;
+      font-weight: 600;
+      color: $primary;
+    }
+  }
+}

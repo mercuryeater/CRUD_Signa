@@ -1,0 +1,36 @@
+@import "../../../styles/variables.scss";
+
+.customButton {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: $background;
+  background-color: $primary;
+  cursor: pointer;
+  transition: all 0.3s;
+  width: fit-content;
+  border: none;
+  font-size: inherit;
+
+  &:hover {
+    opacity: 0.85;
+    color: $white;
+  }
+
+  &:active {
+    opacity: 1;
+    transition: none;
+    transform: scale(0.98);
+    color: $white;
+  }
+
+  &:disabled {
+    background-color: $gray;
+    cursor: not-allowed;
+  }
+}
